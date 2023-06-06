@@ -1,0 +1,24 @@
+---
+import Footer from "./Footer.astro";
+import Section from "./Section.astro";
+---
+
+<section id="accessories">
+  <Section title="Accessories" color='black' textColor='gray-800'>
+    <div slot="footer">
+      <div class="flex gap-x-5">
+        <a
+          class="text-white text-sm font-medium border-[3px] border-black px-[91.5px] py-[7.5px] rounded bg-gray-900 transition-colors duration-500 hover:bg-black/5 hover:backdrop-blur-sm hover:text-gray-800"
+          href="#">Shop Now</a
+        >
+      </div>
+        <Footer />
+    </div>
+    <img
+      slot="background"
+      class="h-full w-full object-cover object-center"
+      src="./accessories.avif"
+      alt="Accessories"
+    />
+  </Section>
+</section>

@@ -1,0 +1,32 @@
+---
+import Section from "./Section.astro";
+---
+
+<section id="model-s">
+  <Section
+    title="Model S"
+    subtitle="View Inventory"
+    color="black"
+    underline="underline underline-offset-4"
+    textColor="gray-800"
+  >
+    <div slot="footer">
+      <div class="flex gap-x-5">
+        <a
+          class="text-white text-sm font-medium border-[3px] border-[#393c41] px-[86px] py-[7.5px] rounded bg-[#393c41] transition-colors duration-500 hover:bg-black/5 hover:backdrop-blur-sm hover:text-gray-800"
+          href="#">Order Now</a
+        >
+        <a
+          class="text-gray-800 text-sm font-medium border-[3px] border-[#fafafa] px-[86px] py-[7.5px] rounded bg-[#fafafa] transition-colors duration-500 hover:bg-black/5 hover:backdrop-blur-sm hover:border-[#393c41]"
+          href="#">Demo Drive</a
+        >
+      </div>
+    </div>
+    <img
+      slot="background"
+      class="h-full w-full object-cover object-center"
+      src="./model-s.avif"
+      alt="Model S"
+    />
+  </Section>
+</section>
